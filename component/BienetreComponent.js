@@ -21,7 +21,7 @@ const Item = ({ title , image, prix , navigation }) => (
           <Image style={{width:30, height: 30}} source={require('../assets/BOUTON_PANIER_ORANGE.png') }></Image>
           </TouchableOpacity>
          
-         <TouchableOpacity>
+         <TouchableOpacity onPress={() => navigation.navigate('playlist')}>
          <Image style={{width:30, height: 30}} source={require('../assets/BOUTON_AJOUT_VIDEO_DANS_PLAYLIST_ORANGE.png') }></Image>
          </TouchableOpacity>
           <Image style={{width:30, height: 30}} source={require('../assets/BOUTON_PARTAGE_ORANGE.png') }></Image>
@@ -44,7 +44,7 @@ export default function Bienetrecomponent({navigation} ){
             <Text style={{color:'black',marginBottom:5 , borderBottomColor: colors.Orange , fontSize:16 , paddingBottom:2, borderBottomWidth:3 }} >Voir tout</Text>
             </View>
             <View>
-            <FlatList horizontal={true}
+            <FlatList horizontal={false}
         data={imagepreview}
         renderItem={renderItem}
         keyExtractor={item => item.id}

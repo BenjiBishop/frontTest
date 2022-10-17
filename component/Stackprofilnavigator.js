@@ -2,17 +2,16 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import AccueilScreen from '../screen/acceuil';
 import PlayerScreen from '../screen/player';
+import ProfilScreen from '../screen/profil';
 import modifprofil from './../screen/modifprofil';
 const Stack = createNativeStackNavigator();
-export default function StackNavigator(){
-
+export default function Stackprofilnavigator(){
     
     return(
 
         <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="pardefaut" component={AccueilScreen}  />
-        <Stack.Screen name="player" component={PlayerScreen} />
-  
+        <Stack.Screen name="profil" component={ProfilScreen}  />
+        <Stack.Screen name='modifprofil' component={modifprofil} />
       </Stack.Navigator>
        
     )

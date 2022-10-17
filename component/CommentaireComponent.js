@@ -35,7 +35,50 @@ export default function CommentaireComponent() {
             </Text>
             <Image style={{width:30,height:30}} source={require('../assets/BOUTON_AIMER_ORANGE.png')} ></Image>
             <Image style={{width:30,height:30}} source={require('../assets/BOUTON_REPONDRE_COMMENTAIRE_ORANGE.png')} ></Image>
+            <Image style={{width:30,height:30}} source={require('../assets/BOUTON_SUPPRIMER_ORANGE.png')} ></Image>
         </View>
+        <View style={{padding:5, display:'flex' , width:'100%', flexDirection:'row'}}>
+            <Text  style={{backgroundColor:'ghostwhite' , width:'80%'}}>
+            Lorem ipsum dolor sit amet, consectetuer adipis 
+            Lorem ipsum dolor sit amet, consectetuer
+            </Text>
+            <Image style={{width:30,height:30}} source={require('../assets/BOUTON_AIMER_ORANGE.png')} ></Image>
+            <Image style={{width:30,height:30}} source={require('../assets/BOUTON_REPONDRE_COMMENTAIRE_ORANGE.png')} ></Image>
+        </View>
+        <View style={{padding:5, display:'flex' , width:'100%', flexDirection:'row'}}>
+            <Text  style={{backgroundColor:'ghostwhite' , width:'80%'}}>
+            Lorem ipsum dolor sit amet, consectetuer adipis 
+            Lorem ipsum dolor sit amet, consectetuer
+            </Text>
+            <Image style={{width:30,height:30}} source={require('../assets/BOUTON_AIMER_ORANGE.png')} ></Image>
+            <Image style={{width:30,height:30}} source={require('../assets/BOUTON_REPONDRE_COMMENTAIRE_ORANGE.png')} ></Image>
+        </View>
+        <View style={{padding:5, display:'flex' , width:'100%', flexDirection:'row'}}>
+            <Text  style={{backgroundColor:'ghostwhite' , width:'80%'}}>
+            Lorem ipsum dolor sit amet, consectetuer adipis 
+            Lorem ipsum dolor sit amet, consectetuer
+            </Text>
+            <Image style={{width:30,height:30}} source={require('../assets/BOUTON_AIMER_ORANGE.png')} ></Image>
+            <Image style={{width:30,height:30}} source={require('../assets/BOUTON_REPONDRE_COMMENTAIRE_ORANGE.png')} ></Image>
+        </View>
+        <View style={{padding:5, display:'flex' , width:'100%', flexDirection:'row'}}>
+            <Text  style={{backgroundColor:'ghostwhite' , width:'80%'}}>
+            Lorem ipsum dolor sit amet, consectetuer adipis 
+            Lorem ipsum dolor sit amet, consectetuer
+            </Text>
+            <Image style={{width:30,height:30}} source={require('../assets/BOUTON_AIMER_ORANGE.png')} ></Image>
+            <Image style={{width:30,height:30}} source={require('../assets/BOUTON_REPONDRE_COMMENTAIRE_ORANGE.png')} ></Image>
+            <Image style={{width:30,height:30}} source={require('../assets/BOUTON_SUPPRIMER_ORANGE.png')} ></Image>
+        </View>
+        <View style={{padding:5, display:'flex' , width:'100%', flexDirection:'row'}}>
+            <Text  style={{backgroundColor:'ghostwhite' , width:'80%'}}>
+            Lorem ipsum dolor sit amet, consectetuer adipis 
+            Lorem ipsum dolor sit amet, consectetuer
+            </Text>
+            <Image style={{width:30,height:30}} source={require('../assets/BOUTON_AIMER_ORANGE.png')} ></Image>
+            <Image style={{width:30,height:30}} source={require('../assets/BOUTON_REPONDRE_COMMENTAIRE_ORANGE.png')} ></Image>
+        </View>
+
          <View style={{padding:5, display:'flex' , width:'100%', flexDirection:'row'}}>
             <Text  style={{backgroundColor:'ghostwhite' , width:'80%'}}>
             Lorem ipsum dolor sit amet, consectetuer adipis 

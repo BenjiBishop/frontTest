@@ -7,10 +7,8 @@ import colors from '../themes/color';
 import Headerscreen from './../component/header';
 import CategorieScreen from './../component/categorieComponent';
 import Categorie from '../data/categorie';
-import NouveauComponent from './../component/NouveauComponent';
 import Bienetrecomponent from '../component/BienetreComponent';
-import CultureComponent from '../component/CultureComponent';
-import EcologieComponent from '../component/EcologieComponent';
+
 
 export default function AccueilScreen( {navigation}) {
   
@@ -20,14 +18,11 @@ export default function AccueilScreen( {navigation}) {
   
     <SafeAreaView >
       <Headerscreen></Headerscreen>
-      <ScrollView>
+      
       <CategorieScreen data={Categorie} ></CategorieScreen>
      
-      <NouveauComponent></NouveauComponent>
       <Bienetrecomponent  navigation={navigation}></Bienetrecomponent>
-      <CultureComponent></CultureComponent>
-      <EcologieComponent></EcologieComponent>
-      </ScrollView>
+  
     </SafeAreaView>
    
     </LinearGradient>

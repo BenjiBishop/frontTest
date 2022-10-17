@@ -39,7 +39,10 @@ export default function SigninScreen( { navigation }) {
         </View>
         </View>
         <View style={{marginTop:35, display:'flex', justifyContent:'center', alignItems:'center'}}>
+          <TouchableOpacity onPress={() => navigation.navigate('categorie')}>
           <Text style={{color:colors.Orange}}>Pas encore membre ?</Text>
+          </TouchableOpacity>
+          
           <TouchableOpacity onPress={() => navigation.navigate('inscription')}>
           <Text style={{color:colors.Blanc , fontSize:16 , fontWeight:'400',marginVertical:5}}>Créez un compte gratuitement</Text>
           </TouchableOpacity>

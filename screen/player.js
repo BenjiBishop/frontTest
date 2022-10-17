@@ -8,6 +8,8 @@ import { LinearGradient } from 'expo-linear-gradient';
 import colors from '../themes/color';
 import Headerscreen from './../component/header';
 import CommentaireComponent from '../component/CommentaireComponent';
+import RecommendedComponent from './../component/recommended';
+
 
 export default function PlayerScreen() {
   const video = React.useRef(null);
@@ -26,24 +28,24 @@ export default function PlayerScreen() {
           uri: 'https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4',
         }}
         resizeMode="contain"
-        isLooping
         onPlaybackStatusUpdate={status => setStatus(() => status)}
       />
       
       </View>
-      <ScrollView style={styles.container}>
-    <View style={{display:'flex' , flexDirection:'row', marginTop:5, paddingHorizontal:5, justifyContent:'space-between' , alignItems:'center'}} >
-        <Text style={{fontSize:18 , width:'70%'}}>
-            ceci est  le titre du video 
-        </Text>
-      
-       <View style={{width:'30%' , }}>
-       <LinearGradient colors={['#EA5B0C', '#F39200']} style={{paddingVertical:4}} start={{x: 0, y: 0}} end={{x: 1, y: 0}}>
-        <TouchableOpacity  >
-        <Text style={{color:colors.Blanc, fontSize:16, fontWeight:'700',  textAlign:'center'}}>3500 FCFA</Text>
-      </TouchableOpacity>
-        </LinearGradient>
-       </View>
+     <View style={{backgroundColor:'white'}}>
+        
+     <View style={{display:'flex' , flexDirection:'row', marginTop:5, paddingHorizontal:5, justifyContent:'space-between',backgroundColor:'white' , alignItems:'center'}} >
+          <Text style={{fontSize:18 , width:'70%'}}>
+              ceci est  le titre de la  video 
+            </Text>
+        
+        <View style={{width:'30%' , }}>
+        <LinearGradient colors={['#EA5B0C', '#F39200']} style={{paddingVertical:4}} start={{x: 0, y: 0}} end={{x: 1, y: 0}}>
+          <TouchableOpacity  >
+          <Text style={{color:colors.Blanc, fontSize:16, fontWeight:'700',  textAlign:'center'}}>3500 FCFA</Text>
+        </TouchableOpacity>
+          </LinearGradient>
+        </View>
        
     </View>
      <View style={styles.option}>
@@ -53,11 +55,13 @@ export default function PlayerScreen() {
        <Image source={require('../assets/BOUTON_AJOUT_VIDEO_DANS_PLAYLIST_ORANGE.png')} style={styles.img} ></Image>
        <Image source={require('../assets/BOUTON_PARTAGE_ORANGE.png')} style={styles.img} ></Image>
      </View>
+     </View>
+     <ScrollView style={styles.container}>
       <View style={styles.commentaire}>
         <View style={styles.com} >
           <View style={{display:'flex', alignItems:'center', flexDirection:'row' , marginRight:5 }}>
           <Text style={{color:colors.Noir, paddingRight:2, borderBottomWidth:1 , fontWeight:'600', borderBottomColor:colors.Orange }}>commentaires : </Text>
-          <Text style={{color:colors.Orange , marginRight:15}}>1546</Text>
+          <Text style={{color:colors.Orange , marginRight:15}}>1548</Text>
           </View>
           <View style={{backgroundColor:colors.Orange, height:1 , width:'50%', marginRight:7, fontWeight:'600' }}>
 
@@ -68,10 +72,13 @@ export default function PlayerScreen() {
         </View>
         <View style={styles.comform}>
         <CommentaireComponent></CommentaireComponent>
+       
+        <RecommendedComponent></RecommendedComponent>
+     
         </View>
       </View>
       </ScrollView>
-   
+        
     </SafeAreaView>
    
     </LinearGradient>
@@ -83,8 +90,8 @@ export default function PlayerScreen() {
 const styles = StyleSheet.create({
     container: {
         backgroundColor:'white',
-        
-
+       height:200,
+      
      },
      video:{
       width:'100%',
@@ -106,7 +113,8 @@ const styles = StyleSheet.create({
       height:45
      },
      commentaire:{
-      margin:10
+      margin:10,
+      
      },
      com:{
       display:'flex',
