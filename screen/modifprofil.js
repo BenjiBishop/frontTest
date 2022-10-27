@@ -2,7 +2,7 @@ import { ScrollView, StyleSheet, } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFonts } from 'expo-font';
 import { LinearGradient } from 'expo-linear-gradient';
-import Headerscreen from './../component/header';
+import Headerscreen from '../component/header';
 import { View, Text, TouchableOpacity , Image , TextInput } from 'react-native';
 import colors from '../themes/color';
 
@@ -17,11 +17,9 @@ export default function Modifprofil({ navigation }) {
         <View  >
           <View style={styles.header2}>
            <View style={{display:'flex' , flexDirection:'row' , justifyContent:'center',alignItems:'center' }}>
-           <LinearGradient  colors={['#EA5B0C', '#F39200']} start={{x: 0, y: 0}} end={{x: 1, y: 0}} style={styles.pp}  >
               <View >
-                  <Image source={require('../assets/ICONE_CHANGER_PROFIL_COMPTE.png')} ></Image>
+                  <Image style={{width:80, height:80, marginTop:40}} source={require('../assets/user.png')} ></Image>
               </View>    
-              </LinearGradient>
               
            </View>
         
@@ -55,7 +53,7 @@ export default function Modifprofil({ navigation }) {
             <Text style={{fontWeight:'700' , fontSize:16,color:colors.Orange , marginVertical:3}}>Pays de résidence</Text>
             <TextInput placeholderTextColor={'#7F7F7F'} style={styles.input} selectTextOnFocus={true}  placeholder="mastou@gmail.com" />
             </View>
-            <LinearGradient colors={['#EA5B0C', '#F39200']} style={{borderRadius:150 , marginVertical:20 , width:'75%',shadowColor: "#000",
+            <LinearGradient colors={['#33B5FF', '#33D4FF']} style={{borderRadius:150 , marginVertical:20 , width:'75%',shadowColor: "#000",
 shadowOffset: {
 	width: 0,
 	height: 8,

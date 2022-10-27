@@ -7,10 +7,7 @@ import SigninScreen from './screen/signin';
 import SignupScreen from './screen/signup';
 
 import HomeScrenn from './screen/home';
-import PlayerScreen from './screen/player';
-import Categories from './screen/categories';
-import Playerplaylist from './screen/playerplaylist';
-import Selectplaylist from './screen/Selectplaylist';
+
 const Stack = createNativeStackNavigator();
 
 
@@ -21,12 +18,10 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Connexion" component={SigninScreen} />
-        <Stack.Screen name='categorie' component={Categories} /> 
         <Stack.Screen name="inscription" component={SignupScreen} />
         <Stack.Screen name="home" component={HomeScrenn} />
-        <Stack.Screen name="player" component={PlayerScreen} />
-        <Stack.Screen name="playlist" component={Playerplaylist} />
-        <Stack.Screen name="listeplay" component={Selectplaylist} />
+        <Stack.Screen name = "signin" component={SigninScreen} />
+        
   </Stack.Navigator>
       
     </NavigationContainer>

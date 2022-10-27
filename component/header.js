@@ -13,7 +13,7 @@ export default function Headerscreen(props) {
         <View style={styles.contain}>
            <View style={{display:"flex" , flexDirection:"column", width:'65%' }}>
            <TouchableOpacity>
-            <Text style={{color:colors.Orange, fontSize:16, fontWeight:'600' , marginBottom:2}}>VIDEOPOSITIVE</Text>
+            <Text style={{color:colors.Verte, fontSize:16, fontWeight:'600' , marginBottom:2}}>Espace Membre</Text>
             </TouchableOpacity>
             <View style={{display:"flex" , justifyContent:"space-between", alignItems:"center",  flexDirection:"row"}}>
             <Popover
@@ -37,19 +37,7 @@ export default function Headerscreen(props) {
       
            </View>
           
-           <Popover
-        placement="bottom right"
-        trigger={
-          <Pressable style={{ height: 26, width: 24 }}>
-             <Image style={{ width:30, height:30}} source={require('../assets/TROIS_POINTS_BLANCS_HORIZONTAL.png')}></Image>
-          </Pressable>
-        } 
-      >
-        <Popover.Backdrop />
-        <Popover.Content>
-        <Petipepopup />
-        </Popover.Content>
-            </Popover>
+          
         </View>
      
     )
@@ -63,7 +51,7 @@ export function MyPopoverView({ navigation }) {
            <View style={{marginRight:8}}>
            <LinearGradient  colors={['#EA5B0C', '#F39200']} start={{x: 0, y: 0}} end={{x: 1, y: 0}} style={styles.pp}  >
               <View >
-                  <Image style={{width:40, height:40 }} source={require('../assets/ICONE_CHANGER_PROFIL_COMPTE.png')} ></Image>
+                  <Image style={{width:40, height:40 }} source={require('../assets/user.png')} ></Image>
               </View>    
               </LinearGradient>
            </View>
@@ -81,52 +69,19 @@ export function MyPopoverView({ navigation }) {
           <TouchableOpacity>
             <View style={[styles.row, styles.justifyBetween, styles.header]}>
             <View style={{marginRight:5}} >
-                  <Image style={{width:25, height:25 }} source={require('../assets/ICONE_PROFIL_ORANGE.png')} ></Image>
+                  <Image style={{width:25, height:25 }} source={require('../assets/decon.jpg')} ></Image>
               </View>
               <Text style={{fontSize:16, color: '#1F2937' }}>Profil</Text>
             </View>
           </TouchableOpacity>
           <Spacer width={'98%'} height={2} />
-          <TouchableOpacity>
-            <View style={[styles.row, styles.justifyBetween, styles.header]}>
-            <View style={{marginRight:5}} >
-                  <Image style={{width:25, height:25 }} source={require('../assets/ICONE_APROPOS_ORANGE.png')} ></Image>
-              </View>
-              <Text style={{fontSize:16, color: '#1F2937' }}>A Propos de nous </Text>
-            </View>
+          <TouchableOpacity>            
           </TouchableOpacity>
           <Spacer width={'98%'} height={2} />
           <TouchableOpacity>
             <View style={[styles.row, styles.justifyBetween, styles.header]}>
             <View style={{marginRight:5}} >
-                  <Image style={{width:25, height:25 }} source={require('../assets/ICONE_CATEGORIE_ORANGE.png')} ></Image>
-              </View>
-              <Text style={{fontSize:16, color: '#1F2937' }}>Catégories </Text>
-            </View>
-          </TouchableOpacity>
-          <Spacer width={'98%'} height={2} />
-          <TouchableOpacity>
-            <View style={[styles.row, styles.justifyBetween, styles.header]}>
-            <View style={{marginRight:5}} >
-                  <Image style={{width:25, height:25 }} source={require('../assets/ICONE_ETOILE_ORANGE.png')} ></Image>
-              </View>
-              <Text style={{fontSize:16, color: '#1F2937' }}>Noter l'application</Text>
-            </View>
-          </TouchableOpacity>
-          <Spacer width={'98%'} height={2} />
-          <TouchableOpacity>
-            <View style={[styles.row, styles.justifyBetween, styles.header]}>
-            <View style={{marginRight:5}} >
-                  <Image style={{width:25, height:25 }} source={require('../assets/ICONE_SUGGERER_ORANGE.png')} ></Image>
-              </View>
-              <Text style={{fontSize:16, color: '#1F2937' }}>Suggérer à un ami</Text>
-            </View>
-          </TouchableOpacity>
-          <Spacer width={'98%'} height={2} />
-          <TouchableOpacity>
-            <View style={[styles.row, styles.justifyBetween, styles.header]}>
-            <View style={{marginRight:5}} >
-                  <Image style={{width:25, height:25 }} source={require('../assets/ICONE_DECONNEXION_ORANGE.png')} ></Image>
+                  <Image style={{width:25, height:25 }} source={require('../assets/decon.jpg')} ></Image>
               </View>
               <Text style={{fontSize:16, color: '#1F2937' }}>Déconnexion</Text>
             </View>
@@ -135,40 +90,7 @@ export function MyPopoverView({ navigation }) {
       </View>
     );
   }
-  export function Petipepopup(){
-    return(
-      <View style={[styles.boxShadow2, styles.shadow]}>
-      <ScrollView>
-         <TouchableOpacity>
-            <View style={[styles.row, styles.justifyBetween, styles.header]}>
-            <View style={{marginRight:5}} >
-                  <Image style={{width:25, height:25 }} source={require('../assets/ICONE_PLAYLIST.png')} ></Image>
-              </View>
-              <Text style={{fontSize:16, color: '#1F2937' }}>Playlists</Text>
-            </View>
-          </TouchableOpacity>
-          <Spacer width={'98%'} height={2} />
-          <TouchableOpacity>
-            <View style={[styles.row, styles.justifyBetween, styles.header]}>
-            <View style={{marginRight:5}} >
-                  <Image style={{width:25, height:25 }} source={require('../assets/BOUTON_FAVORI_ORANGE.png')} ></Image>
-              </View>
-              <Text style={{fontSize:16, color: '#1F2937' }}>Favories </Text>
-            </View>
-          </TouchableOpacity>
-          <Spacer width={'98%'} height={2} />
-          <TouchableOpacity>
-            <View style={[styles.row, styles.justifyBetween, styles.header]}>
-            <View style={{marginRight:5}} >
-                  <Image style={{width:25, height:25 }} source={require('../assets/BOUTON_AIMER_ORANGE.png')} ></Image>
-              </View>
-              <Text style={{fontSize:16, color: '#1F2937' }}>Aimés </Text>
-            </View>
-          </TouchableOpacity>
-      </ScrollView>
-    </View>
-    )
-  }
+  
   
   const Spacer = ({ height, width }) => {
     return (
